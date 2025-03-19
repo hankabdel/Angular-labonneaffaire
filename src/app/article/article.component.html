@@ -1,16 +1,19 @@
 <div class="card" style="width: 18rem">
-  <img
-    class="card-img-top"
-    src="/assets/img/piscine.jpg"
-    alt="Card image cap"
-  />
-
+  <img class="card-img-top" src="/assets/img/piscine.jpg" [alt]="textAltImg" />
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">{{ titreArticle }}</h5>
+    <h6 class="card-title">{{ prixArticle }} €</h6>
+    <p class="card-text">Une Description</p>
+
+    <button class="btn btn-primary" (click)="onLike()">J'aime</button>
+    <p>Nombre de like :{{ totalNbrLike }}</p>
+
+    <input
+      class="input-group-text"
+      type="text"
+      placeholder="Ecris ton commentaire"
+      [(ngModel)]="comment"
+    />
+    <p>COMMENTAIRE: {{ comment }}</p>
   </div>
 </div>
