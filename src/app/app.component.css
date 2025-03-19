@@ -1,0 +1,28 @@
+#home {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+}
+
+footer {
+    background-color: #343a40; /* Ajoutez une couleur de fond pour le contraste */
+    color: white; /* Ajoutez une couleur de texte pour le contraste */
+    padding: 1rem 0; /* Ajoutez un padding pour le contenu */
+    text-align: center;
+}
+
+.container{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+}
+
+.labonnaffaire{
+    background-color:#343a40 ;
+}
