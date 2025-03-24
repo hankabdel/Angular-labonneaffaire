@@ -24,9 +24,16 @@
 </nav>
 <!-- contenu -->
 <div id="home" class="containercontenu">
-  <app-article></app-article>
-  <app-article></app-article>
-  <app-article></app-article>
+  <app-article
+    *ngFor="let element of liste"
+    [titreArticle]="element.titreArticle"
+    [prixArticle]="element.prixArticle"
+    [description]="element.description"
+    [urlImg]="element.urlImg"
+    [textAltImg]="element.textAltImg"
+    [dispo]="element.dispo"
+  >
+  </app-article>
 </div>
 <!-- Pied de page -->
 <footer>

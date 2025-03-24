@@ -1,7 +1,10 @@
 <div class="card" style="width: 18rem">
-  <img class="card-img-top" src="/assets/img/piscine.jpg" [alt]="textAltImg" />
+  <img class="card-img-top" [src]="urlImg" [alt]="textAltImg" />
   <div class="card-body">
-    <h5 class="card-title">{{ titreArticle }}</h5>
+    <h5 class="card-title">
+      {{ titreArticle }}
+      <span NgIf="dispo === false"> - Indisponible </span>
+    </h5>
     <h6 class="card-title">{{ prixArticle }} €</h6>
     <p class="card-text">Une Description</p>
 
